@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans';
+}
+
+body {
+    align-items: center;
+    background-color: #283651;
+    color: white;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #A60D0D;
+    border: 3px inset #fff47d;
+    border-radius: 2vh;
+    box-shadow: 0 0 10px 5px rgba(225, 244, 125, 0.5);
+    padding: 5vh;
+    margin: 5vh;
+    max-width: 400vh;
+    text-align: center;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Audiowide';
+    font-weight: lighter;
+}
+
+input {
+    background-color: white;
+    border: 0px;
+    border-radius: 1vh;
+    color: black;
+    padding: 5px;
+    width: 50vh;
+}
+
+input:hover {
+    background-color: #ddd;
+}
+
+input:focus {
+    background-color: white;
+}
+
+input, button {
+    margin: 1vh;
+}
+
+button {
+    background-color: #433f3c;
+    border-radius: 1vh;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: #534f4c;
+}
+
+.basic-info,
+.asn-info,
+.privacy-info,
+.abuse-info {
+    background-color: #433f3c;
+    border: 2px inset #fff47d;
+    border-radius: 2vh;
+    color: white;
+    margin: 3vh;
+    padding: 5vh;
+    text-align: left;
+}
+
+.asn-privacy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.asn-privacy p {
+    text-align: center;
+    font-size: larger;
+}
+
+.asn-info, .privacy-info {
+    max-width: fit-content;
+}
+
+li {
+    list-style: none inside;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
