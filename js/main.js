@@ -12,10 +12,12 @@ function locateUser() {
             if (!response.ok) {
                 throw new Error('Dirección IP no encontrada.')
             }
+            if (html.input.value.length === 0) {
+                throw new Error('Escribe una dirección IP.')
+            }
             return response.json()
         })
         .then(data => {
-            console.log(data);
             html.userInfo.innerHTML = `
             <h2>La Dirección IP ${data.ip} está ubicada en ${data.country} (${data.country_code}).</h2>
             <h3>Continente ${data.continent}</h3>
