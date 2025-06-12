@@ -12,7 +12,7 @@ function locateUser() {
             if (!response.ok) {
                 throw new Error('Dirección IP no encontrada.')
             }
-            if (html.input.value.length === 0) {
+            if (html.input.value.trim().length === 0) {
                 throw new Error('Escribe una dirección IP.')
             }
             return response.json()
